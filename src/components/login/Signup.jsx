@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { Snackbar } from '@mui/material';
 import './login.css'
 
-
-
 const Reg = ({setAuth}) => {
   const [method, setMethod] = useState("login");
   const [username, setUsername] = useState("");
@@ -94,7 +92,7 @@ const Reg = ({setAuth}) => {
     </div>
       <Snackbar
         open={open}
-        autoHideDuration={5000}
+        autoHideDuration={3000}
         onClose={handleClose}
         message={message}
       />

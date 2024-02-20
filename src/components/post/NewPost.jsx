@@ -22,7 +22,7 @@ const NewPost = () => {
       headers: {
         "Content-Type": "application/json"
       },
-      body: ({
+      body: JSON.stringify({
         username: username,
         blog: blog
       })
